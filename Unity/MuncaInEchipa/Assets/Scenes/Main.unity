@@ -387,7 +387,7 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 384, y: -455.44}
+  m_AnchoredPosition: {x: 0, y: -455.44}
   m_SizeDelta: {x: 384, y: 169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123564678
@@ -637,48 +637,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 28
+  - defaultCooldown: 13
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 1
-      affectedAmount: 3
-  - defaultCooldown: 51
+      affectedAmount: 10
+  - defaultCooldown: 25
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 5
-      affectedAmount: 3
-  - defaultCooldown: 96
+      affectedAmount: 10
+  - defaultCooldown: 45
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 2
-      affectedAmount: 3
-  - defaultCooldown: 121
+      affectedAmount: 10
+  - defaultCooldown: 57
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 3
-      affectedAmount: 3
-  - defaultCooldown: 120
+      affectedAmount: 10
+  - defaultCooldown: 60
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 4
-      affectedAmount: 3
+      affectedAmount: 10
   Happiness: 3
-  depletedUpdateRate: 3
+  depletedUpdateRate: 1
 --- !u!1 &181218104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,48 +1431,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 24
+  - defaultCooldown: 12
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 4
-      affectedAmount: 3
-  - defaultCooldown: 57
+      affectedAmount: 10
+  - defaultCooldown: 27
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 1
-      affectedAmount: 3
-  - defaultCooldown: 76
+      affectedAmount: 10
+  - defaultCooldown: 38
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 5
-      affectedAmount: 3
-  - defaultCooldown: 128
+      affectedAmount: 10
+  - defaultCooldown: 60
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 2
-      affectedAmount: 3
-  - defaultCooldown: 152
+      affectedAmount: 10
+  - defaultCooldown: 72
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 3
-      affectedAmount: 3
+      affectedAmount: 10
   Happiness: 3
-  depletedUpdateRate: 3
+  depletedUpdateRate: 1
 --- !u!1 &338353159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,7 +1712,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -768, y: -456}
+  m_AnchoredPosition: {x: 768, y: -455.44}
   m_SizeDelta: {x: 384, y: 169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &435498035
@@ -2206,48 +2206,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 30
+  - defaultCooldown: 14
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 3
-      affectedAmount: 3
-  - defaultCooldown: 64
+      affectedAmount: 10
+  - defaultCooldown: 30
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 2
-      affectedAmount: 3
-  - defaultCooldown: 72
+      affectedAmount: 10
+  - defaultCooldown: 36
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 4
-      affectedAmount: 3
-  - defaultCooldown: 102
+      affectedAmount: 10
+  - defaultCooldown: 51
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 5
-      affectedAmount: 3
-  - defaultCooldown: 144
+      affectedAmount: 10
+  - defaultCooldown: 68
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 1
-      affectedAmount: 3
+      affectedAmount: 10
   Happiness: 3
-  depletedUpdateRate: 3
+  depletedUpdateRate: 1
 --- !u!1 &610709812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,48 +2530,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 32
+  - defaultCooldown: 15
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 2
-      affectedAmount: 3
-  - defaultCooldown: 60
+      affectedAmount: 10
+  - defaultCooldown: 28
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 3
-      affectedAmount: 3
-  - defaultCooldown: 86
+      affectedAmount: 10
+  - defaultCooldown: 40
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 1
-      affectedAmount: 3
-  - defaultCooldown: 96
+      affectedAmount: 10
+  - defaultCooldown: 48
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 4
-      affectedAmount: 3
-  - defaultCooldown: 128
+      affectedAmount: 10
+  - defaultCooldown: 64
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 5
-      affectedAmount: 3
+      affectedAmount: 10
   Happiness: 3
-  depletedUpdateRate: 3
+  depletedUpdateRate: 1
 --- !u!1 &753569107
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,48 +3102,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 25
+  - defaultCooldown: 12
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 5
-      affectedAmount: 3
-  - defaultCooldown: 48
+      affectedAmount: 10
+  - defaultCooldown: 24
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 4
-      affectedAmount: 3
-  - defaultCooldown: 21
+      affectedAmount: 10
+  - defaultCooldown: 43
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 3
-      affectedAmount: 3
-  - defaultCooldown: 115
+      affectedAmount: 10
+  - defaultCooldown: 54
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 1
-      affectedAmount: 3
-  - defaultCooldown: 160
+      affectedAmount: 10
+  - defaultCooldown: 76
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 5
+      affectedAmount: 15
     - type: 2
-      affectedAmount: 3
+      affectedAmount: 10
   Happiness: 3
-  depletedUpdateRate: 3
+  depletedUpdateRate: 1
 --- !u!1 &900505836
 GameObject:
   m_ObjectHideFlags: 0
@@ -5314,7 +5314,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035156, y: -456}
+  m_AnchoredPosition: {x: 384, y: -455.44}
   m_SizeDelta: {x: 384, y: 169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823843103
@@ -5448,7 +5448,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 768, y: -455.44}
+  m_AnchoredPosition: {x: -768, y: -455.44}
   m_SizeDelta: {x: 384, y: 169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890557223
