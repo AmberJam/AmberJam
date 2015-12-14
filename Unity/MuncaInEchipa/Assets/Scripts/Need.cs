@@ -21,7 +21,7 @@ public class Need
     public List<AffectedNeed> affectedTypes;
     public DateTime lastTimeDepleted;
 
-    public Need()
+    public void Initialize()
     {
         lastTimeDepleted = DateTime.Now;
         currentCooldown = defaultCooldown;

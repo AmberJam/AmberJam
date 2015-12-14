@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
 
-public enum HappinessLevel { Mort, Suparat, Meh, Woohoo};
+public enum HappinessLevel { Mort, Suparat, Meh, Woohoo, NumHappyStates};
 
 public class Character : MonoBehaviour {
 
@@ -21,10 +21,14 @@ public class Character : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         lastTimeWasNotFine = DateTime.Now;
+
+        foreach (Need need in allNeeds)
+            need.Initialize();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        //Debug.Log("Dani Happiness: " + Happiness);
         UpdateAllNeeds(Time.deltaTime);
 	}
 
@@ -70,6 +74,8 @@ public class Character : MonoBehaviour {
             }
             if(need.wasDepleted)
             {
+
+                Debug.Log("I have this need: " + need.type);
                 isFine = false;
             }
         }
