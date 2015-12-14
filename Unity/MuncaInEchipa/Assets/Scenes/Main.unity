@@ -642,41 +642,41 @@ MonoBehaviour:
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 1
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 25
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 5
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 45
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 2
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 57
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 3
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 60
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 4
-      affectedAmount: 10
+      affectedAmount: 5
   Happiness: 3
   depletedUpdateRate: 1
 --- !u!1 &181218104
@@ -1456,41 +1456,41 @@ MonoBehaviour:
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 4
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 27
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 1
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 38
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 5
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 60
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 2
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 72
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 3
-      affectedAmount: 10
+      affectedAmount: 5
   Happiness: 3
   depletedUpdateRate: 1
 --- !u!1 &338353159
@@ -2231,41 +2231,41 @@ MonoBehaviour:
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 3
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 30
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 2
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 36
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 4
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 51
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 5
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 68
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 1
-      affectedAmount: 10
+      affectedAmount: 5
   Happiness: 3
   depletedUpdateRate: 1
 --- !u!1 &610709812
@@ -2555,41 +2555,41 @@ MonoBehaviour:
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 2
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 28
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 3
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 40
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 1
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 48
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 4
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 64
     ratioPerSec: 1
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 5
-      affectedAmount: 10
+      affectedAmount: 5
   Happiness: 3
   depletedUpdateRate: 1
 --- !u!1 &753569107
@@ -3127,41 +3127,41 @@ MonoBehaviour:
     type: 4
     affectedTypes:
     - type: 1
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 5
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 24
     ratioPerSec: 1
     type: 1
     affectedTypes:
     - type: 2
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 4
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 43
     ratioPerSec: 1
     type: 2
     affectedTypes:
     - type: 4
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 3
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 54
     ratioPerSec: 1
     type: 3
     affectedTypes:
     - type: 5
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 1
-      affectedAmount: 10
+      affectedAmount: 5
   - defaultCooldown: 76
     ratioPerSec: 1
     type: 5
     affectedTypes:
     - type: 3
-      affectedAmount: 15
+      affectedAmount: 7
     - type: 2
-      affectedAmount: 10
+      affectedAmount: 5
   Happiness: 3
   depletedUpdateRate: 1
 --- !u!1 &900505836
