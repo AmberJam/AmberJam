@@ -32,7 +32,7 @@ public class Character : MonoBehaviour {
         UpdateAllNeeds(Time.deltaTime);
 	}
 
-    void SatisfyNeed(NeedType type)
+    public void SatisfyNeed(NeedType type)
     {
         foreach(Need need in allNeeds)
         {
