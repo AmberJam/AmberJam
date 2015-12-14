@@ -11,11 +11,9 @@ public struct AffectedNeed
     public NeedType type;
     public int affectedAmount; //cu cat e afectat need-ul
 };
-
-public class Need : MonoBehaviour {
-    
-
-
+[Serializable]
+public class Need
+{
     public float defaultCooldown;
     private float currentCooldown;
     public int ratioPerSec = 1;
@@ -23,16 +21,15 @@ public class Need : MonoBehaviour {
     public List<AffectedNeed> affectedTypes;
     public DateTime lastTimeDepleted;
 
-    [NonSerialized]
-    public bool wasDepleted = false;
-
-    // Use this for initialization
-    void Start () {
+    public Need()
+    {
         lastTimeDepleted = DateTime.Now;
         currentCooldown = defaultCooldown;
-        affectedTypes = new List<AffectedNeed>();
         wasDepleted = false;
-	}
+    }
+
+    [NonSerialized]
+    public bool wasDepleted = false;
 
     public void decreaseCooldown(float amount)
     {
@@ -40,8 +37,8 @@ public class Need : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	public int MyUpdate (float dt) {
-
+	public int MyUpdate (float dt)
+    {
         decreaseCooldown(dt * ratioPerSec);
 
         if (currentCooldown <= 0f)
