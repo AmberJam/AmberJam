@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public enum NeedType { NoType};
+public enum NeedType { NoType = 0, Fumat, Mancat, Baut, Cafea, Baie};
 
 [Serializable]
 public struct AffectedNeed

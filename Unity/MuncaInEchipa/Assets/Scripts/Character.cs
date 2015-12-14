@@ -14,7 +14,6 @@ public class Character : MonoBehaviour {
     public HappinessLevel Happiness;
 
     public int depletedUpdateRate = 10;
-    public int needsUpdateRate = 1;
 
 	// Use this for initialization
 	void Start () {
