@@ -84,7 +84,8 @@ public class Character : MonoBehaviour {
         {
             if ((DateTime.Now - lastTimeWasNotFine).Seconds >= depletedUpdateRate)
             {
-                Happiness++;
+                if(Happiness < HappinessLevel.NumHappyStates - 1)
+                    Happiness++;
                 lastTimeWasNotFine = DateTime.Now;
             }
         }
