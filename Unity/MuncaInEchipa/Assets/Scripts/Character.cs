@@ -13,10 +13,14 @@ public class Character : MonoBehaviour {
     private List<Text> displayNeeds;
     public HappinessLevel Happiness;
 
+    private DateTime lastTimeWasNotFine;
+    private bool wasFineLastTime = true;
+
     public int depletedUpdateRate = 10;
 
 	// Use this for initialization
 	void Start () {
+        lastTimeWasNotFine = DateTime.Now;
 	}
 	
 	// Update is called once per frame
@@ -54,6 +58,8 @@ public class Character : MonoBehaviour {
     //vede daca pierzi happiness
     void UpdateAllNeeds(float dt)
     {
+        bool isFine = true;
+
         foreach (Need need in allNeeds)
         {
             if(need.MyUpdate(dt) >= depletedUpdateRate)
@@ -62,6 +68,24 @@ public class Character : MonoBehaviour {
                 if(Happiness > HappinessLevel.Mort)
                     Happiness--;
             }
+            if(need.wasDepleted)
+            {
+                isFine = false;
+            }
+        }
+
+        if(isFine)
+        {
+            if ((DateTime.Now - lastTimeWasNotFine).Seconds >= depletedUpdateRate)
+            {
+                Happiness++;
+                lastTimeWasNotFine = DateTime.Now;
+            }
+        }
+        else
+        {
+            lastTimeWasNotFine = DateTime.Now;
         }
     }
+    
 }
