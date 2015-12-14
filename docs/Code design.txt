@@ -1,0 +1,48 @@
+Clasa Need
+	struct NeedStruct
+	{
+		NeedType type;
+		int affectedAmount;
+	}
+
+	public float defaultCooldown;
+	private float currentCooldown;
+	public int ratioPerSec = 1;
+	public NeedType type = NeedType.NoType;
+	public vector<NeedStruct> affectedTypes;
+	public DateTime lastTimeDepleted;
+	
+	private bool wasDepleted = false;
+
+	public void MyUpdate(float dt) //dt is in seconds
+	{
+		currentCooldown -= dt * ratioPerSec;
+		if(currentCooldown <= 0.f)
+		{
+			currentCooldown = 0.f;
+			lastTimeDepleted = DateTime.Now;
+		}
+	}
+
+	public void ResetCooldown()
+	{
+		
+	}
+
+Class Character
+
+	enum HappinessLevel {Mort, Suparat, Meh, Woohoo};
+
+	private vector<Needs> allNeeds;
+	private string name;
+	private vector<Labels> displayNeeds;
+	public HappinessLevel Happiness;
+
+	public int depletedUpdateRate = 10;
+	public int needsUpdateRate = 1;
+
+	Update() -> odata la _updateRate_ sec facem update la displayNeeds si la Happiness in functie de nevoi
+		 ->odata la _needsUpdateRate_ facem foreach(need in allNeeds) need.MyUpdate(float dt)
+
+Class AllProgress
+	
