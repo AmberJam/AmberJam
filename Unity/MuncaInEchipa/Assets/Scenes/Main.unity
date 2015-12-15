@@ -531,6 +531,7 @@ GameObject:
   - 222: {fileID: 181109560}
   - 114: {fileID: 181109559}
   - 114: {fileID: 181109561}
+  - 114: {fileID: 181109562}
   m_Layer: 5
   m_Name: Daniel
   m_TagString: Untagged
@@ -615,6 +616,22 @@ MonoBehaviour:
   - type: 1
     isActive: 0
   Happiness: 3
+--- !u!114 &181109562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181109557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9497464d1a718349aa79552f4cdea98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatars:
+  - {fileID: 2800000, guid: 26e1a8e9baebb694580811f79e8495c2, type: 3}
+  - {fileID: 2800000, guid: 076905b5f50c5274896d7c15b72e4a94, type: 3}
+  - {fileID: 2800000, guid: 7b8a32171f253b14184785edc228d10f, type: 3}
+  - {fileID: 2800000, guid: f3e0072924926a948ae1f2322165abf8, type: 3}
 --- !u!1 &181218104
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,8 +830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e78dfc72bfd9a4e9f91b03eded1618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTex: {fileID: 2800000, guid: fca2b7c2427db9240bc890e9251dc6dc, type: 3}
-  offTex: {fileID: 2800000, guid: f26b2223cd7e10c45868112c8826a38b, type: 3}
+  onTex: {fileID: 2800000, guid: 09b6baa2a9233944382325a2e8d3fd72, type: 3}
+  offTex: {fileID: 2800000, guid: 87a7bb4d16fcf7b48a2838840030e678, type: 3}
 --- !u!114 &194537082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,8 +1287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e78dfc72bfd9a4e9f91b03eded1618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTex: {fileID: 2800000, guid: fca2b7c2427db9240bc890e9251dc6dc, type: 3}
-  offTex: {fileID: 2800000, guid: f26b2223cd7e10c45868112c8826a38b, type: 3}
+  onTex: {fileID: 2800000, guid: 09b6baa2a9233944382325a2e8d3fd72, type: 3}
+  offTex: {fileID: 2800000, guid: 87a7bb4d16fcf7b48a2838840030e678, type: 3}
 --- !u!114 &285528143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1427,6 +1444,7 @@ GameObject:
   - 222: {fileID: 328387259}
   - 114: {fileID: 328387258}
   - 114: {fileID: 328387260}
+  - 114: {fileID: 328387261}
   m_Layer: 5
   m_Name: Marius
   m_TagString: Untagged
@@ -1511,6 +1529,22 @@ MonoBehaviour:
   - type: 2
     isActive: 0
   Happiness: 3
+--- !u!114 &328387261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328387256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9497464d1a718349aa79552f4cdea98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatars:
+  - {fileID: 2800000, guid: d2a0a2c850749114cad9a2533de7fdf5, type: 3}
+  - {fileID: 2800000, guid: 4035f5b731be69142913252df2da841e, type: 3}
+  - {fileID: 2800000, guid: 04fd677773606b74796dc267dba9de0b, type: 3}
+  - {fileID: 2800000, guid: a39714c4fa81f8840a9310ef98296c43, type: 3}
 --- !u!1 &338353159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,6 +2180,7 @@ GameObject:
   - 222: {fileID: 551394188}
   - 114: {fileID: 551394187}
   - 114: {fileID: 551394189}
+  - 114: {fileID: 551394190}
   m_Layer: 5
   m_Name: Blana
   m_TagString: Untagged
@@ -2230,6 +2265,22 @@ MonoBehaviour:
   - type: 3
     isActive: 0
   Happiness: 3
+--- !u!114 &551394190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551394185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9497464d1a718349aa79552f4cdea98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatars:
+  - {fileID: 2800000, guid: c615f1f1de25fbf4a9b2b20d95ce39a9, type: 3}
+  - {fileID: 2800000, guid: 8780c00f3d91f6c4d8836543105ac75e, type: 3}
+  - {fileID: 2800000, guid: ea002cf482f69ae40818cfc2d4f79549, type: 3}
+  - {fileID: 2800000, guid: f7deeed29c738ea45b43152a8ebcbb3f, type: 3}
 --- !u!1 &573615475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2613,6 +2664,7 @@ GameObject:
   - 222: {fileID: 724346795}
   - 114: {fileID: 724346794}
   - 114: {fileID: 724346796}
+  - 114: {fileID: 724346797}
   m_Layer: 5
   m_Name: Xenia
   m_TagString: Untagged
@@ -2697,6 +2749,22 @@ MonoBehaviour:
   - type: 4
     isActive: 0
   Happiness: 3
+--- !u!114 &724346797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724346792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9497464d1a718349aa79552f4cdea98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatars:
+  - {fileID: 2800000, guid: d5aa684c6d58d4241a0c1800e4f6c3bd, type: 3}
+  - {fileID: 2800000, guid: 09bb3b2137f850847aef0f9c1f7723b4, type: 3}
+  - {fileID: 2800000, guid: 7d0b96e7270af2e449fa4b3999af82a6, type: 3}
+  - {fileID: 2800000, guid: 05c05e414c51c8d44a77c662b532b512, type: 3}
 --- !u!1 &756632454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,8 +2991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e78dfc72bfd9a4e9f91b03eded1618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTex: {fileID: 2800000, guid: fca2b7c2427db9240bc890e9251dc6dc, type: 3}
-  offTex: {fileID: 2800000, guid: f26b2223cd7e10c45868112c8826a38b, type: 3}
+  onTex: {fileID: 2800000, guid: 09b6baa2a9233944382325a2e8d3fd72, type: 3}
+  offTex: {fileID: 2800000, guid: 87a7bb4d16fcf7b48a2838840030e678, type: 3}
 --- !u!1 &821808240
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,6 +3105,7 @@ GameObject:
   - 222: {fileID: 854495178}
   - 114: {fileID: 854495177}
   - 114: {fileID: 854495179}
+  - 114: {fileID: 854495180}
   m_Layer: 5
   m_Name: Aurelian
   m_TagString: Untagged
@@ -3121,6 +3190,22 @@ MonoBehaviour:
   - type: 5
     isActive: 0
   Happiness: 3
+--- !u!114 &854495180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854495175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9497464d1a718349aa79552f4cdea98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  avatars:
+  - {fileID: 2800000, guid: 89af7712bb81b64469cd4b928d0dc4cf, type: 3}
+  - {fileID: 2800000, guid: 47a0bdb2fc1a35045a9d214ce9593428, type: 3}
+  - {fileID: 2800000, guid: ba7e732abcbdf854e818f7cac9fed098, type: 3}
+  - {fileID: 2800000, guid: 40449e2c8be335d44a117f5f3f0c6789, type: 3}
 --- !u!1 &862022951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,8 +3252,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e78dfc72bfd9a4e9f91b03eded1618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTex: {fileID: 2800000, guid: fca2b7c2427db9240bc890e9251dc6dc, type: 3}
-  offTex: {fileID: 2800000, guid: f26b2223cd7e10c45868112c8826a38b, type: 3}
+  onTex: {fileID: 2800000, guid: 09b6baa2a9233944382325a2e8d3fd72, type: 3}
+  offTex: {fileID: 2800000, guid: 87a7bb4d16fcf7b48a2838840030e678, type: 3}
 --- !u!114 &862022954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3473,8 +3558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8e78dfc72bfd9a4e9f91b03eded1618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onTex: {fileID: 2800000, guid: fca2b7c2427db9240bc890e9251dc6dc, type: 3}
-  offTex: {fileID: 2800000, guid: f26b2223cd7e10c45868112c8826a38b, type: 3}
+  onTex: {fileID: 2800000, guid: 09b6baa2a9233944382325a2e8d3fd72, type: 3}
+  offTex: {fileID: 2800000, guid: 87a7bb4d16fcf7b48a2838840030e678, type: 3}
 --- !u!114 &977186110
 MonoBehaviour:
   m_ObjectHideFlags: 0
