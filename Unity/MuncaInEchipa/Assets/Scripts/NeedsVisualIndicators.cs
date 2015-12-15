@@ -28,13 +28,14 @@ public class NeedsVisualIndicators : MonoBehaviour
         foreach(Need need in character.allNeeds)
         {
             RawImage imageIndicator = indicatorsMap[need.type];
-            Color color = imageIndicator.color;
+            //Color color = imageIndicator.color;
 
-            //color.a = need.wasDepleted ? 1 : 0.25f;
-            float alpha = need.wasDepleted ? 1 : 0.25f;
-            color = Color.Lerp(color, new Color(color.r, color.g, color.b, alpha), Time.deltaTime * lerpSpeed);
-            //color.a = lerpSpeed * Time.deltaTime
-            imageIndicator.color = color;
+            ////color.a = need.wasDepleted ? 1 : 0.25f;
+            //float alpha = need.wasDepleted ? 1 : 0.25f;
+            //color = Color.Lerp(color, new Color(color.r, color.g, color.b, alpha), Time.deltaTime * lerpSpeed);
+            ////color.a = lerpSpeed * Time.deltaTime
+            //imageIndicator.color = color;
+            imageIndicator.gameObject.GetComponent<TexSwitch>().switchTex(need.wasDepleted);
         }	
 	}
 }
