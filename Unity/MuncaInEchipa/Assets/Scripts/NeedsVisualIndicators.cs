@@ -7,6 +7,7 @@ public class NeedsVisualIndicators : MonoBehaviour
 
     private Dictionary<NeedType, RawImage> indicatorsMap;
     private Character character;
+    private float lerpSpeed = 10f;
 
 	// Use this for initialization
 	void Start ()
@@ -29,7 +30,10 @@ public class NeedsVisualIndicators : MonoBehaviour
             RawImage imageIndicator = indicatorsMap[need.type];
             Color color = imageIndicator.color;
 
-            color.a = need.wasDepleted ? 1 : 0;
+            //color.a = need.wasDepleted ? 1 : 0.25f;
+            float alpha = need.wasDepleted ? 1 : 0.25f;
+            color = Color.Lerp(color, new Color(color.r, color.g, color.b, alpha), Time.deltaTime * lerpSpeed);
+            //color.a = lerpSpeed * Time.deltaTime
             imageIndicator.color = color;
         }	
 	}
