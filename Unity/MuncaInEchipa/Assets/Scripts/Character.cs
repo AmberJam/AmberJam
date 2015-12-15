@@ -95,4 +95,14 @@ public class Character : MonoBehaviour {
         }
     }
     
+    public bool hasAnyDepletedNeed()
+    {
+        foreach(Need need in allNeeds)
+        {
+            if (need.wasDepleted)
+                return true;
+        }
+
+        return false;
+    }
 }

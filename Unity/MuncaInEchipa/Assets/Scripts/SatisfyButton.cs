@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class SatisfyButton : MonoBehaviour {
 
     public NeedType type;
-
+    
     private List<Character> characters;
 
     void Start()
