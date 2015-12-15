@@ -66,7 +66,7 @@ public class GameLogic : MonoBehaviour
         {
             random_type2++;
             if (random_type2 >= NeedType.NumTypes)
-                random_type2 = 1;
+                random_type2 = (NeedType)1;
         }
         used.Clear();
         for (int j = 0; j < 3; j++)
@@ -88,7 +88,7 @@ public class GameLogic : MonoBehaviour
         {
             random_type3++;
             if (random_type3 >= NeedType.NumTypes)
-                random_type3 = 1;
+                random_type3 = (NeedType)1;
         }
         int cnt = 0;
         used.Clear();
