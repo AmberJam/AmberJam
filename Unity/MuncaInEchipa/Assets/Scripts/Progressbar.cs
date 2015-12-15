@@ -37,7 +37,7 @@ public class Progressbar : MonoBehaviour {
 	    foreach(Character character in characters)
         {
             happinessSum += (int)character.Happiness;
-            if (character.hasAnyDepletedNeed())
+            if (character.Happiness == HappinessLevel.Mort)
                 wasDepleted = true;
         }
 
