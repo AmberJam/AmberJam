@@ -36,7 +36,7 @@ public class GameLogic : MonoBehaviour
         foreach (Character character in characters)
             character.cleanActiveNeeds();
 
-        NeedType random_type = (NeedType)UnityEngine.Random.Range(0, (float)NeedType.NumTypes - 1);
+        NeedType random_type = (NeedType)UnityEngine.Random.Range(1, (float)NeedType.NumTypes - 1);
         List<int> used = new List<int>();
         for (int j = 0; j < 3; j++)
         {
@@ -52,7 +52,7 @@ public class GameLogic : MonoBehaviour
         }
 
         // a 2 a formatie
-        NeedType random_type2 = (NeedType)UnityEngine.Random.Range(0, (float)NeedType.NumTypes - 1);
+        NeedType random_type2 = (NeedType)UnityEngine.Random.Range(1, (float)NeedType.NumTypes - 1);
         while (random_type2 == random_type)
         {
             random_type2++;
@@ -69,12 +69,12 @@ public class GameLogic : MonoBehaviour
                 if (rand >= characters.Count - 1)
                     rand = 0;
             }
-            characters[rand].activateNeed(random_type);
+            characters[rand].activateNeed(random_type2);
             used.Add(rand);
         }
 
         // a 3 a formatie
-        NeedType random_type3 = (NeedType)UnityEngine.Random.Range(0, (float)NeedType.NumTypes - 1);
+        NeedType random_type3 = (NeedType)UnityEngine.Random.Range(1, (float)NeedType.NumTypes - 1);
         while (random_type3 == random_type || random_type3 == random_type2)
         {
             random_type3++;
@@ -100,7 +100,7 @@ public class GameLogic : MonoBehaviour
                 if (rand >= characters.Count - 1)
                     rand = 0;
             }
-            characters[rand].activateNeed(random_type);
+            characters[rand].activateNeed(random_type3);
             used.Add(rand);
         }
     }
