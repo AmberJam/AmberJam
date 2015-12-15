@@ -782,7 +782,7 @@ MonoBehaviour:
   - {fileID: 854495179}
   - {fileID: 551394189}
   - {fileID: 724346796}
-  maxProgress: 40
+  maxProgress: 4
   currentProgress: 0
 --- !u!1 &194537079
 GameObject:

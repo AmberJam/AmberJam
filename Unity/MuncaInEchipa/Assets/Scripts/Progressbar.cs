@@ -36,10 +36,15 @@ public class Progressbar : MonoBehaviour {
     public void myUpdate()
     {
         lastUpdateTime = DateTime.Now;
-        int happinessSum = 0;
+        int happinessSum = 1;
 	    foreach(Character character in characters)
         {
-            happinessSum += (int)character.Happiness;
+            if (character.Happiness <= HappinessLevel.Mort)
+            {
+                happinessSum = 0;
+                break;
+            }
+            //happinessSum += (int)character.Happiness;
         }
         
 
