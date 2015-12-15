@@ -20,6 +20,8 @@ public class Progressbar : MonoBehaviour {
         lastUpdateTime = DateTime.Now;
         fullProgressBar = GetComponent<RawImage>();
         initialSize = fullProgressBar.rectTransform.sizeDelta;
+        
+        fullProgressBar.rectTransform.sizeDelta = new Vector2(0, initialSize.y);
 	}
 	
 	// Update is called once per frame
