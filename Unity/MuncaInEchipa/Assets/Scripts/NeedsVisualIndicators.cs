@@ -7,7 +7,7 @@ public class NeedsVisualIndicators : MonoBehaviour
 
     private Dictionary<NeedType, RawImage> indicatorsMap;
     private Character character;
-    private float lerpSpeed = 10f;
+    private float lerpSpeed = 2f;
 
 	// Use this for initialization
 	void Start ()
