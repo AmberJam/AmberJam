@@ -604,48 +604,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 13
-    ratioPerSec: 1
-    type: 3
-    affectedTypes:
-    - type: 5
-      affectedAmount: 7
-    - type: 1
-      affectedAmount: 5
-  - defaultCooldown: 25
-    ratioPerSec: 1
-    type: 4
-    affectedTypes:
-    - type: 1
-      affectedAmount: 7
-    - type: 5
-      affectedAmount: 5
-  - defaultCooldown: 45
-    ratioPerSec: 1
-    type: 5
-    affectedTypes:
-    - type: 3
-      affectedAmount: 7
-    - type: 2
-      affectedAmount: 5
-  - defaultCooldown: 57
-    ratioPerSec: 1
-    type: 2
-    affectedTypes:
-    - type: 4
-      affectedAmount: 7
-    - type: 3
-      affectedAmount: 5
-  - defaultCooldown: 60
-    ratioPerSec: 1
-    type: 1
-    affectedTypes:
-    - type: 2
-      affectedAmount: 7
-    - type: 4
-      affectedAmount: 5
+  - type: 3
+    isActive: 0
+  - type: 4
+    isActive: 0
+  - type: 5
+    isActive: 0
+  - type: 2
+    isActive: 0
+  - type: 1
+    isActive: 0
   Happiness: 3
-  depletedUpdateRate: 1
 --- !u!1 &181218104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,6 +993,7 @@ GameObject:
   - 223: {fileID: 224665595}
   - 114: {fileID: 224665594}
   - 114: {fileID: 224665593}
+  - 114: {fileID: 224665597}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1104,6 +1074,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &224665597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 224665592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617011b42ec8b5445973c729133a12f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnDuration: 10
+  characters:
+  - {fileID: 181109561}
+  - {fileID: 328387260}
+  - {fileID: 854495179}
+  - {fileID: 551394189}
+  - {fileID: 724346796}
 --- !u!1 &240687777
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,48 +1500,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 12
-    ratioPerSec: 1
-    type: 1
-    affectedTypes:
-    - type: 2
-      affectedAmount: 7
-    - type: 4
-      affectedAmount: 5
-  - defaultCooldown: 27
-    ratioPerSec: 1
-    type: 3
-    affectedTypes:
-    - type: 5
-      affectedAmount: 7
-    - type: 1
-      affectedAmount: 5
-  - defaultCooldown: 38
-    ratioPerSec: 1
-    type: 4
-    affectedTypes:
-    - type: 1
-      affectedAmount: 7
-    - type: 5
-      affectedAmount: 5
-  - defaultCooldown: 60
-    ratioPerSec: 1
-    type: 5
-    affectedTypes:
-    - type: 3
-      affectedAmount: 7
-    - type: 2
-      affectedAmount: 5
-  - defaultCooldown: 72
-    ratioPerSec: 1
-    type: 2
-    affectedTypes:
-    - type: 4
-      affectedAmount: 7
-    - type: 3
-      affectedAmount: 5
+  - type: 1
+    isActive: 0
+  - type: 3
+    isActive: 0
+  - type: 4
+    isActive: 0
+  - type: 5
+    isActive: 0
+  - type: 2
+    isActive: 0
   Happiness: 3
-  depletedUpdateRate: 1
 --- !u!1 &338353159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,48 +2219,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 14
-    ratioPerSec: 1
-    type: 2
-    affectedTypes:
-    - type: 4
-      affectedAmount: 7
-    - type: 3
-      affectedAmount: 5
-  - defaultCooldown: 30
-    ratioPerSec: 1
-    type: 5
-    affectedTypes:
-    - type: 3
-      affectedAmount: 7
-    - type: 2
-      affectedAmount: 5
-  - defaultCooldown: 36
-    ratioPerSec: 1
-    type: 1
-    affectedTypes:
-    - type: 2
-      affectedAmount: 7
-    - type: 4
-      affectedAmount: 5
-  - defaultCooldown: 51
-    ratioPerSec: 1
-    type: 4
-    affectedTypes:
-    - type: 1
-      affectedAmount: 7
-    - type: 5
-      affectedAmount: 5
-  - defaultCooldown: 68
-    ratioPerSec: 1
-    type: 3
-    affectedTypes:
-    - type: 5
-      affectedAmount: 7
-    - type: 1
-      affectedAmount: 5
+  - type: 2
+    isActive: 0
+  - type: 5
+    isActive: 0
+  - type: 1
+    isActive: 0
+  - type: 4
+    isActive: 0
+  - type: 3
+    isActive: 0
   Happiness: 3
-  depletedUpdateRate: 1
 --- !u!1 &573615475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,48 +2686,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 15
-    ratioPerSec: 1
-    type: 5
-    affectedTypes:
-    - type: 3
-      affectedAmount: 7
-    - type: 2
-      affectedAmount: 5
-  - defaultCooldown: 28
-    ratioPerSec: 1
-    type: 2
-    affectedTypes:
-    - type: 4
-      affectedAmount: 7
-    - type: 3
-      affectedAmount: 5
-  - defaultCooldown: 40
-    ratioPerSec: 1
-    type: 3
-    affectedTypes:
-    - type: 5
-      affectedAmount: 7
-    - type: 1
-      affectedAmount: 5
-  - defaultCooldown: 48
-    ratioPerSec: 1
-    type: 1
-    affectedTypes:
-    - type: 2
-      affectedAmount: 7
-    - type: 4
-      affectedAmount: 5
-  - defaultCooldown: 64
-    ratioPerSec: 1
-    type: 4
-    affectedTypes:
-    - type: 1
-      affectedAmount: 7
-    - type: 5
-      affectedAmount: 5
+  - type: 5
+    isActive: 0
+  - type: 2
+    isActive: 0
+  - type: 3
+    isActive: 0
+  - type: 1
+    isActive: 0
+  - type: 4
+    isActive: 0
   Happiness: 3
-  depletedUpdateRate: 1
 --- !u!1 &756632454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,48 +3110,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allNeeds:
-  - defaultCooldown: 12
-    ratioPerSec: 1
-    type: 4
-    affectedTypes:
-    - type: 1
-      affectedAmount: 7
-    - type: 5
-      affectedAmount: 5
-  - defaultCooldown: 24
-    ratioPerSec: 1
-    type: 1
-    affectedTypes:
-    - type: 2
-      affectedAmount: 7
-    - type: 4
-      affectedAmount: 5
-  - defaultCooldown: 43
-    ratioPerSec: 1
-    type: 2
-    affectedTypes:
-    - type: 4
-      affectedAmount: 7
-    - type: 3
-      affectedAmount: 5
-  - defaultCooldown: 54
-    ratioPerSec: 1
-    type: 3
-    affectedTypes:
-    - type: 5
-      affectedAmount: 7
-    - type: 1
-      affectedAmount: 5
-  - defaultCooldown: 76
-    ratioPerSec: 1
-    type: 5
-    affectedTypes:
-    - type: 3
-      affectedAmount: 7
-    - type: 2
-      affectedAmount: 5
+  - type: 4
+    isActive: 0
+  - type: 1
+    isActive: 0
+  - type: 2
+    isActive: 0
+  - type: 3
+    isActive: 0
+  - type: 5
+    isActive: 0
   Happiness: 3
-  depletedUpdateRate: 1
 --- !u!1 &862022951
 GameObject:
   m_ObjectHideFlags: 0

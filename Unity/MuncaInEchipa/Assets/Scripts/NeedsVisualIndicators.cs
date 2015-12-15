@@ -35,7 +35,7 @@ public class NeedsVisualIndicators : MonoBehaviour
             //color = Color.Lerp(color, new Color(color.r, color.g, color.b, alpha), Time.deltaTime * lerpSpeed);
             ////color.a = lerpSpeed * Time.deltaTime
             //imageIndicator.color = color;
-            imageIndicator.gameObject.GetComponent<TexSwitch>().switchTex(need.wasDepleted);
+            imageIndicator.gameObject.GetComponent<TexSwitch>().switchTex(need.isActive);
         }	
 	}
 }
