@@ -33,6 +33,13 @@ public class Progressbar : MonoBehaviour {
         recalculateBounds();
     }
 
+    public void Save()
+    {
+        PlayerPrefs.SetInt("Reached", currentProgress);
+        PlayerPrefs.SetInt("Goal", currentProgress);
+        PlayerPrefs.Save();
+    }
+
     public void myUpdate()
     {
         lastUpdateTime = DateTime.Now;
