@@ -7,9 +7,8 @@ using UnityEngine.UI;
 public class Progressbar : MonoBehaviour {
 
     public List<Character> characters;
-    public int maxProgress = 8;
-    public float updateOnceEveryXSeconds = 1f;
-    private int currentProgress = 0;
+    public int maxProgress = 20;
+    public int currentProgress = 0;
     private DateTime lastUpdateTime;
     private RawImage fullProgressBar;
     private Vector2 initialSize;
@@ -27,28 +26,22 @@ public class Progressbar : MonoBehaviour {
 
         //fullProgressBar.rectTransform.sizeDelta = new Vector2(0, initialSize.y);
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
 
         recalculateBounds();
+    }
 
-        if ((DateTime.Now - lastUpdateTime).Seconds < updateOnceEveryXSeconds)
-            return;
-
+    public void myUpdate()
+    {
         lastUpdateTime = DateTime.Now;
-
         int happinessSum = 0;
-        bool wasDepleted = false;
 	    foreach(Character character in characters)
         {
             happinessSum += (int)character.Happiness;
-            if (character.Happiness == HappinessLevel.Mort)
-                wasDepleted = true;
         }
-
-        if (wasDepleted)
-            return;
+        
 
         currentProgress += happinessSum;
 

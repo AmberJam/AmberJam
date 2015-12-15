@@ -782,8 +782,8 @@ MonoBehaviour:
   - {fileID: 854495179}
   - {fileID: 551394189}
   - {fileID: 724346796}
-  maxProgress: 1000
-  updateOnceEveryXSeconds: 1
+  maxProgress: 40
+  currentProgress: 0
 --- !u!1 &194537079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnDuration: 120
+  maxTurns: 10
+  progressBar: {fileID: 182736307}
+  timeBar: {fileID: 396518567}
   characters:
   - {fileID: 181109561}
   - {fileID: 328387260}
@@ -1762,7 +1765,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3450020caf0b2ae4996d4e27b22a351e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSeconds: 300
+  maxTurns: 0
+  currentTurn: 0
 --- !u!1 &435498033
 GameObject:
   m_ObjectHideFlags: 0

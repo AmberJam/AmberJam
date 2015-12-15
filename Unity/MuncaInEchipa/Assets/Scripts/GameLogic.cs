@@ -6,14 +6,19 @@ using System;
 public class GameLogic : MonoBehaviour
 {
     public float turnDuration = 10f;
+    public int maxTurns = 10;
+    public Progressbar progressBar;
+    public TimeBar timeBar;
     public DateTime lastTurnTime;
 
     public List<Character> characters;
 
 	void Start ()
     {
+        timeBar.maxTurns = maxTurns;
         lastTurnTime = DateTime.Now;
         shuffleBoard();
+        progressBar.currentProgress = 0;
 
     }
 	
@@ -32,6 +37,10 @@ public class GameLogic : MonoBehaviour
 
     void shuffleBoard()
     {
+        //bars update
+        timeBar.currentTurn++;
+        progressBar.myUpdate();
+
         lastTurnTime = DateTime.Now;
         foreach (Character character in characters)
             character.cleanActiveNeeds();
