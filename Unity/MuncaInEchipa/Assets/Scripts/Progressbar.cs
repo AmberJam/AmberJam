@@ -13,16 +13,20 @@ public class Progressbar : MonoBehaviour {
     private DateTime lastUpdateTime;
     private RawImage fullProgressBar;
     private Vector2 initialSize;
+    private Vector2 initialSizeDelta;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         currentProgress = 0;
         lastUpdateTime = DateTime.Now;
         fullProgressBar = GetComponent<RawImage>();
-        initialSize = fullProgressBar.rectTransform.sizeDelta;
-        
-        fullProgressBar.rectTransform.sizeDelta = new Vector2(0, initialSize.y);
-	}
+        //initialSize = fullProgressBar.rectTransform.sizeDelta;
+        initialSize = fullProgressBar.uvRect.size;
+        initialSizeDelta = fullProgressBar.rectTransform.sizeDelta;
+
+
+        //fullProgressBar.rectTransform.sizeDelta = new Vector2(0, initialSize.y);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -53,6 +57,11 @@ public class Progressbar : MonoBehaviour {
 
     void recalculateBounds()
     {
-        fullProgressBar.rectTransform.sizeDelta = Vector2.Lerp(new Vector2(fullProgressBar.rectTransform.sizeDelta.x, initialSize.y), new Vector2(initialSize.x * currentProgress / maxProgress , initialSize.y), (float)(DateTime.Now - lastUpdateTime).TotalSeconds);
+        Vector2 newSize = Vector2.Lerp(new Vector2(fullProgressBar.uvRect.size.x, initialSize.y), 
+            new Vector2(initialSize.x * currentProgress / maxProgress, initialSize.y), 
+            (float)(DateTime.Now - lastUpdateTime).TotalSeconds);
+        //Vector2 newSize = fullProgressBar.uvRect.size;
+        fullProgressBar.uvRect = new Rect(fullProgressBar.uvRect.position, newSize);
+        fullProgressBar.rectTransform.sizeDelta = Vector2.Lerp(new Vector2(fullProgressBar.rectTransform.sizeDelta.x, initialSizeDelta.y), new Vector2(initialSizeDelta.x * currentProgress / maxProgress , initialSizeDelta.y), (float)(DateTime.Now - lastUpdateTime).TotalSeconds);
     }
 }
