@@ -67,4 +67,9 @@ public class Need
         wasDepleted = false;
         currentCooldown = defaultCooldown;
     }
+
+    public float getClampedCooldown()
+    {
+        return currentCooldown / defaultCooldown;
+    }
 }
