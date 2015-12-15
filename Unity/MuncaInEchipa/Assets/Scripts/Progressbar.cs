@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Progressbar : MonoBehaviour {
 
     public List<Character> characters;
-    public int maxProgress = 1000;
+    public int maxProgress = 8;
     public float updateOnceEveryXSeconds = 1f;
     private int currentProgress = 0;
     private DateTime lastUpdateTime;
