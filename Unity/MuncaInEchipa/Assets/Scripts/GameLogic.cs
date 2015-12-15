@@ -25,7 +25,14 @@ public class GameLogic : MonoBehaviour
 	
 	void Update ()
     {
-	    if ((DateTime.Now - lastTurnTime).TotalSeconds >= turnDuration)
+        if (timeBar.currentTurn >= timeBar.maxTurns)
+        {
+            progressBar.Save();
+            SceneManager.LoadScene(1);
+            return;
+        }
+
+        if ((DateTime.Now - lastTurnTime).TotalSeconds >= turnDuration)
         {
             lastTurnTime = DateTime.Now;
             foreach (Character character in characters)
@@ -35,11 +42,7 @@ public class GameLogic : MonoBehaviour
             shuffleBoard();
         }
 
-        if (timeBar.currentTurn >= timeBar.maxTurns)
-        {
-            progressBar.Save();
-            SceneManager.LoadScene(1);
-        }
+
 	}
 
     void shuffleBoard()
