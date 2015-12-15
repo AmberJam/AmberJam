@@ -1765,7 +1765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3450020caf0b2ae4996d4e27b22a351e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTurns: 0
+  maxTurns: 6
   currentTurn: 0
 --- !u!1 &435498033
 GameObject:

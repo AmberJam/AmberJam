@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
@@ -32,6 +33,12 @@ public class GameLogic : MonoBehaviour
                 character.decreaseHappiness();
             }
             shuffleBoard();
+        }
+
+        if (timeBar.currentTurn >= timeBar.maxTurns)
+        {
+            progressBar.Save();
+            SceneManager.LoadScene(1);
         }
 	}
 

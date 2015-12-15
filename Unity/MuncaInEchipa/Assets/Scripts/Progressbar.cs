@@ -36,7 +36,7 @@ public class Progressbar : MonoBehaviour {
     public void Save()
     {
         PlayerPrefs.SetInt("Reached", currentProgress);
-        PlayerPrefs.SetInt("Goal", currentProgress);
+        PlayerPrefs.SetInt("Goal", maxProgress);
         PlayerPrefs.Save();
     }
 

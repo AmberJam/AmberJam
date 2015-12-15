@@ -6,6 +6,6 @@ public class ReloadMainScene : MonoBehaviour {
 
     public void onClick()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Main");
     }
 }
